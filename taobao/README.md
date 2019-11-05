@@ -7,6 +7,7 @@
 * [流程信息](./custom/log.txt)
 * [新版流程](./custom/log_3.0.txt)
 * [组件定制](./custom)
+* [立即下载](https://github.com/Rukawalee/Scripts/releases)
 #### 重要更新
 ##### 11.05 更新 [直达更新](./release)
 1. 升级至3.0.1，源码暂留
