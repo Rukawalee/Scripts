@@ -9,8 +9,9 @@
 3. 查找关键组件信息
 4. 点击复制信息
 ### 图片操作
-<img alt="步骤1" src="../picture/settings1.png" width="19%"/> 
-<img alt="步骤2" src="../picture/settings2.png" width="19%"/> 
-<img alt="步骤3" src="../picture/settings3.png" width="19%"/> 
-<img alt="步骤4" src="../picture/settings4.png" width="19%"/> 
-<img alt="步骤5" src="../picture/settings5.png" width="19%"/> 
+<img alt="步骤1" src="../picture/settings1.png" width="32%"/> 
+<img alt="步骤2" src="../picture/settings2.png" width="32%"/> 
+<img alt="步骤3" src="../picture/settings3.png" width="32%"/> 
+<img alt="步骤4" src="../picture/settings4.png" width="32%"/> 
+<img alt="步骤5" src="../picture/settings5.png" width="32%"/> 
+<img alt="步骤6" src="../picture/settings6.png" width="32%"/> 
