@@ -4,16 +4,15 @@
 #### 主要功能  
 自动点按式完成淘宝喵币收集，第三方工具 [Autojs](apk)
 #### 重要信息
-《[流程信息](./custom/log.txt)》 《[新版流程](./custom/log_3.0.txt)》 《[组件定制](./custom)》 《[立即下载](https://github.com/Rukawalee/Scripts/releases)》
+《[流程信息](./custom/log.txt)》 《[新版流程](./custom/log_3.0.txt)》 《[组件定制](./custom)》 《[立即下载](https://github.com/Rukawalee/Scripts/releases)》  
 #### 重要更新
-##### 11.05 更新 [直达更新](./release)
+##### 11.05 更新 [直达更新](./release/淘宝喵币3.0.1.js)
 1. 定制组件，操作难度增加
 2. 增加30个店铺签到功能
 3. 界面启用UI设计
 4. 兼容更多设备
 5. 三天后重新定制组件
 6. **首次使用需要定制组件**
-7. 修改配置保存至《/喵币定制》
 ##### 历史版本
 * 《[淘宝喵币0.1](./release/history/淘宝喵币0.1.js)》 《[淘宝喵币1.0](./release/history/淘宝喵币1.0.js)》 《[淘宝喵币1.1](./release/history/淘宝喵币1.1.js)》 《[淘宝喵币1.2](./release/history/淘宝喵币1.2.js)》 《[淘宝喵币1.3](./release/history/淘宝喵币1.3.js)》
   * 基于坐标点击
