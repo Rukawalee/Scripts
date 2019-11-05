@@ -83,7 +83,6 @@ function doTask(str) {
         toast("完成一个任务");
         back();
         sleep(3000);
-        collectCoin();
     }
 }
 
