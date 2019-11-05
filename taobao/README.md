@@ -30,6 +30,13 @@
   * 修复任务完成不跳转
   * 修正提示信息准确性
   * 更加灵活，组件定制
+#### 温馨提示
+1. 使用过程中有一定的延时，可自行调整 <kdb> sleep() </kbd> 参数
+2. 操作均由脚本自动跳转设置，勿自行切换页面
+3. 如果页面长时间未反应，可自行进入活动页
+4. 操作完成后会有提示，如果有提示未进行任务则不兼容  
+#### 致谢
+@[DaYePython](https://github.com/DaYePython) 提供解决方案
 #### 使用教程
 1. 安装软件 [Autojs](apk)  
 Autojs是一款安卓脚本自动化模拟用户点按操作apk
@@ -40,10 +47,3 @@ Autojs是一款安卓脚本自动化模拟用户点按操作apk
 <img src="picture/use2.x.gif" alt="使用2.x" width="24%" />
 <img src="picture/use3.x.gif" alt="使用3.x" width="24%" />
 <img src="picture/use_sign3.x.gif" alt="店铺签到3.x" width="24%" />
-## 温馨提示
-1. 使用过程中有一定的延时，可自行调整 <kdb> sleep() </kbd> 参数
-2. 操作均由脚本自动跳转设置，勿自行切换页面
-3. 如果页面长时间未反应，可自行进入活动页
-4. 操作完成后会有提示，如果有提示未进行任务则不兼容
-#### 致谢
-@[DaYePython](https://github.com/DaYePython) 提供解决方案
