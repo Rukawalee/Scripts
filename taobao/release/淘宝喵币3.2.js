@@ -21,6 +21,9 @@ var homeBtn = actCom;
 var homeDepth = 4;
 var homeIndexInParent = 0;
 var confFile = files.getSdcardPath() + "/喵币定制/customer3.1.conf";
+
+var swiperMinVersion = "7.0";
+
 var time = 0;
 var stores = ["&userId=2089100916&shopId=111481369&pathInfo=/campaign-10827-88.htm#tq",
     "&userId=1035757927&shopId=73516010&pathInfo=/campaign-10827-113.htm#tq",
@@ -302,6 +305,12 @@ function doTask(tar) {
                 break;
             case "去浏览":
             case "去进店":
+                if (device.release >= swiperMinVersion){
+                    sleep(2000);
+                    swipe(device.width / 2, 4*device.height/5, device.width / 2, device.height/5,1000);
+                    sleep(1000);
+                    swipe(device.width / 2, 4*device.height/5, device.width / 2, device.height/5,1000);
+                }
                 wait(26, textContains("已获得"),
                     textContains("已达上限"),
                     textContains("任务完成"),
