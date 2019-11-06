@@ -21,9 +21,7 @@ var homeBtn = actCom;
 var homeDepth = 4;
 var homeIndexInParent = 0;
 var confFile = files.getSdcardPath() + "/喵币定制/customer3.1.conf";
-
 var swiperMinVersion = "7.0";
-
 var time = 0;
 var stores = ["&userId=2089100916&shopId=111481369&pathInfo=/campaign-10827-88.htm#tq",
     "&userId=1035757927&shopId=73516010&pathInfo=/campaign-10827-113.htm#tq",
@@ -340,8 +338,20 @@ function doTask(tar) {
 
 function isHome() {
     if (currentActivity() == home) {
+        var hBtn = findComponent(homeBtn, "", "首页", "", true).selected(false);
+        var hTitle = text("首页").selected(false);
+        if(hBtn.exists()){
+            log("状态：进入主页首页");
+            hBtn.findOne().click();
+            sleep(1000);
+        }
+        if(hTitle.exists()){
+            log("状态：进入首页主页");
+            hTitle.findOne().click();
+            sleep(500);
+        }
         findComponent("android.widget.ImageView", "", "猜你喜欢", "", false).exists() ? "" : findComponent(homeBtn, homeDepth, "", homeIndexInParent, true).findOne().click();
-        sleep(1500);
+        sleep(1000);
 		return true;
     }
 	return false;
