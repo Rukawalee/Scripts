@@ -51,7 +51,8 @@ var stores = ["&userId=2089100916&shopId=111481369&pathInfo=/campaign-10827-88.h
     "&userId=446338500&shopId=62147762&pathInfo=/campaign-10827-171.htm#tq",
     "&userId=470168984&shopId=62377409&pathInfo=/campaign-10827-130.htm#tq",
     "&userId=1652554937&shopId=103715363&pathInfo=/campaign-10827-106.htm#tq",
-    "&userId=217101303&shopId=57895461&pathInfo=/campaign-10827-499.htm#tq"
+    "&userId=217101303&shopId=57895461&pathInfo=/campaign-10827-499.htm#tq",
+	"&userId=158748311&shopId=57301762&pathInfo=/campaign-10827-285.htm#tq"
 ];
 
 importClass(com.stardust.autojs.core.ui.JsViewHelper);
