@@ -119,13 +119,13 @@ function UI() {
             depth: editDepth,
             indexInParent: editIndexInParent
         },
-		{
-			id: "card3",
-			title: "首页按钮",
-			className: homeBtn,
-			depth: homeDepth,
-			indexInParent: homeIndexInParent
-		}
+        {
+            id: "card3",
+            title: "首页按钮",
+            className: homeBtn,
+            depth: homeDepth,
+            indexInParent: homeIndexInParent
+        }
     ];
     ui.choose.setDataSource(chooses);
     ui.def.on("click", () => {
@@ -142,7 +142,7 @@ function UI() {
         editText = update("card2", "classname");
         editDepth = update("card2", "depth");
         editIndexInParent = update("card2", "indexInParent");
-		homeBtn = update("card3", "classname");
+        homeBtn = update("card3", "classname");
         homeDepth = update("card3", "depth");
         homeIndexInParent = update("card3", "indexInParent");
         saveConf();
@@ -156,7 +156,7 @@ function saveConf() {
     writer.writeline("双11合伙人：" + actCom + "," + actDepth + "," + actIndexInParent);
     writer.writeline("领喵币：" + taskBtn + "," + taskDepth + "," + taskIndexInParent);
     writer.writeline("搜索页搜索框：" + editText + "," + editDepth + "," + editIndexInParent);
-	writer.writeline("首页按钮：" + homeBtn + "," + homeDepth + "," + homeIndexInParent);
+    writer.writeline("首页按钮：" + homeBtn + "," + homeDepth + "," + homeIndexInParent);
     writer.flush();
     writer.close();
     toast("定制信息保存至" + confFile);
@@ -166,37 +166,37 @@ function saveConf() {
 function loadConf() {
     if (files.exists(confFile)) {
         var reader = open(confFile, "r", "utf-8");
-		var content = "";
-		while((content = reader.readline()) != null){
-			var values = content.split("：");
-			var vs = values[1].split(",");
-			switch(values[0]){
-				case "记录时间":
-					time -= values[1];
-					break;
-				case "双11合伙人":
-					actCom = vs[0];
-					actDepth = vs[1];
-					actIndexInParent = vs[2];
-				    break;
-				case "领喵币":
-					taskBtn = vs[0];
-					taskDepth = vs[1];
-					taskIndexInParent = vs[2];
-					break;
-				case "搜索页搜索框":
-					editText = vs[0];
-					editDepth = vs[1];
-					editIndexInParent = vs[2];
-					break;
-				case "首页按钮":
-					taskBtn = vs[0];
-					taskDepth = vs[1];
-					taskIndexInParent = vs[2];
-					break;
-			}
-		}
-		toast("使用定制组件");
+        var content = "";
+        while ((content = reader.readline()) != null) {
+            var values = content.split("：");
+            var vs = values[1].split(",");
+            switch (values[0]) {
+                case "记录时间":
+                    time -= values[1];
+                    break;
+                case "双11合伙人":
+                    actCom = vs[0];
+                    actDepth = vs[1];
+                    actIndexInParent = vs[2];
+                    break;
+                case "领喵币":
+                    taskBtn = vs[0];
+                    taskDepth = vs[1];
+                    taskIndexInParent = vs[2];
+                    break;
+                case "搜索页搜索框":
+                    editText = vs[0];
+                    editDepth = vs[1];
+                    editIndexInParent = vs[2];
+                    break;
+                case "首页按钮":
+                    taskBtn = vs[0];
+                    taskDepth = vs[1];
+                    taskIndexInParent = vs[2];
+                    break;
+            }
+        }
+        toast("使用定制组件");
     } else {
         toast("使用默认组件");
     }
