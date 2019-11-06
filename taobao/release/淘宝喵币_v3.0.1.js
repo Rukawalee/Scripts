@@ -17,6 +17,7 @@ var searchBtn = taskBtn;
 var homeSearch = view;
 var homeSearchDepth = 1;
 var homeSearchIndexInParent = 8;
+var swiperMinVersion = "7.0"
 var confFile = files.getSdcardPath() + "/喵币定制/customer.conf";
 var time = 0;
 var stores = ["&userId=2089100916&shopId=111481369&pathInfo=/campaign-10827-88.htm#tq",
@@ -262,18 +263,24 @@ function doTask(tar){
         obj.findOne().click();
         switch(tar){
             case "翻倍领取":
-                wait(24, findCompnent(view, "", "观看完成", "", ""));
+                wait(24, findComponent(view, "", "观看完成", "", ""));
                 break;
             case "去查看":
-                wait(8, findCOmpnent(view, "", "", "", ""));
+                wait(8, findComponent(view, "", "", "", ""));
                 break;
             case "去浏览":
             case "去进店":
+                if (device.release >= swiperMinVersion){
+                    sleep(2000);
+                    swipe(device.width / 2, 4*device.height/5, device.width / 2, device.height/5,1000);
+                    sleep(1000);
+                    swipe(device.width / 2, 4*device.height/5, device.width / 2, device.height/5,1000);
+                }
                 wait(26, textContains("已获得"),
                     textContains("已达上限"),
                     textContains("任务完成"),
                     textContains("任务已完成"),
-                    findCompnent(view, "", "已获得", "", ""),
+                    findComponent(view, "", "已获得", "", ""),
                     findComponent(view, "", "已达上限", "", ""),
                     findComponent(view, "", "任务完成", "", ""),
                     findComponent(view, "", "任务已完成", "", ""));
@@ -296,7 +303,7 @@ function doTask(tar){
 function isHome(){
     if(currentActivity() == home){
         log("准备：重新进入活动页");
-        findCompnent(actCom, "", "首页", "", true);
+        findComponent(actCom, "", "首页", "", true).findOne().click();
         sleep(1500);
         goAct();
     }
@@ -375,8 +382,8 @@ function wait(limit){
     while(limit > 0 && condition){
         sleep(2000);
         limit -= 2;
-        for(var arg in arguments){
-            if(arg.exits()){
+        for (let i = 1; i < arguments.length; i++) {
+            if (arguments[i].exists()) {
                 condition = false;
                 break;
             }
