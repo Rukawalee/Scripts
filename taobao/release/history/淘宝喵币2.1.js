@@ -4,10 +4,10 @@ var act = "android.widget.FrameLayout";
 var view = "android.view.View";
 var btn = "android.widget.Button";
 var c_className = act;
-var c_depth = 11;
+var c_depth = 3;
 var c_indexInParent = 1;
 var c_btn = btn;
-var c_btn_depth = 18;
+var c_btn_depth = 14;
 var c_btn_indexInParent = 5;
 var f_name = "./custom.conf";
 
