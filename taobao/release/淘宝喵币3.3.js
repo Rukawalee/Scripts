@@ -537,6 +537,7 @@ function main() {
         if (share) {
             initTask.await();
         }
+        loadConf();
         console.show();
         loadApp(app);
         goAct();
