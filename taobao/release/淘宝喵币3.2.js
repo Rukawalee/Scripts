@@ -21,7 +21,7 @@ var homeBtn = actCom;
 var homeDepth = 4;
 var homeIndexInParent = 0;
 var confFile = files.getSdcardPath() + "/喵币定制/customer3.1.conf";
-var swiperMinVersion = "7.0";
+var swiperMinVersion = 7.0;
 var time = 0;
 var stores = ["&userId=2089100916&shopId=111481369&pathInfo=/campaign-10827-88.htm#tq",
     "&userId=1035757927&shopId=73516010&pathInfo=/campaign-10827-113.htm#tq",
@@ -262,9 +262,12 @@ function goAct() {
         log("状态：进入活动页面中..");
         log("提示：如进错页面，请检查组件");
     }
+
+    // 若不能运行请注释以下三行
     var subThread = timeout(8000, currentActivity(), "组件{上限}不可见，请手动进入活动页");
     textContains("上限").waitFor();
     subThread.interrupt();
+    // 若不能运行请注释以上三行
     log("状态：已进入活动页面");
     toCollect();
 }
