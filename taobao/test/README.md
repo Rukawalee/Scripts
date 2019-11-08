@@ -1,4 +1,9 @@
 # 测试模块
+### 重要更新 (10.08)
+* 修复{淘}第二层组件识别问题
+### 测试模块版本
+* [testModel1.1](./testModel1.1.js)
+* [testModel](./history/testModel.js)
 ### 主要组件
 * 淘宝首页
     1. {双11合伙人}
