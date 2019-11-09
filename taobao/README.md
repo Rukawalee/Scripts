@@ -4,7 +4,7 @@
 #### 主要功能  
 自动点按式完成淘宝喵币收集，第三方工具 [Autojs](apk)
 #### 重要信息
-《[新版流程](./custom/log_4.0.txt)》 《[3.x流程](./custom/log3.0.txt)》 《[旧版流程](./custom/log.txt)》 《[组件定制](./custom)》
+《[组件定制](./custom)》 《[全部流程](./custom/log_4.0.txt)》 《[3.x流程](./custom/log3.0.txt)》 《[旧版流程](./custom/log.txt)》
 #### 重要更新
 ##### 11.09 更新 [直达更新](./release/淘宝喵币4.1.js)
 1. 新增运行时组件失效提醒
