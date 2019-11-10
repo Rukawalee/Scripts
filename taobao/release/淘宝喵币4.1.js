@@ -316,6 +316,7 @@ function doTask(tar) {
                     log("准备：执行活动任务..");
                     var tBtn = findComponent(taskBtn, taskDepth, "", taskIndexInParent, true).findOne(8000);
                     isValid(tBtn, "领喵币");
+					sleep(3000);
                 }
                 break;
             default:
