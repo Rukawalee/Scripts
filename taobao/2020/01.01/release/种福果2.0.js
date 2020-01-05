@@ -228,6 +228,7 @@ function doTask(tar) {
                         findComponent(view, "", "本店今日已领", "", ""));
                 if(isHome()){
                     goAct();
+                    beginTask();
                 }
                 break;
         }
@@ -310,13 +311,7 @@ function over() {
     exit();
 }
 
-function main() {
-    start();
-    if(currentActivity() != actPage){
-        loadApp(appName);
-        goHome(home);
-        goAct();
-    }
+function beginTask(){
     dealSudden(suddenText);
     let collectObj = parseComponent(collectBtn);
     if(collectObj.exists()){
@@ -324,6 +319,16 @@ function main() {
         log("打开活动页..");
         sleep(3000);
     }
+}
+
+function main() {
+    start();
+    if(currentActivity() != actPage){
+        loadApp(appName);
+        goHome(home);
+        goAct();
+    }
+    beginTask();
     sign(signBtn);
     doTask(browseBtn);
     doTask(replacer);
