@@ -314,6 +314,7 @@ function main() {
     start();
     if(currentActivity() != actPage){
         loadApp(appName);
+        goHome(home);
         goAct();
     }
     dealSudden(suddenText);
